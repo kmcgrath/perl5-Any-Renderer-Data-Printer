@@ -3,3 +3,5 @@ Revision history for Any-Renderer-Data-Printer
 0.01    Date/time
         First version, released on an unsuspecting world.
 
+0.02    Tue Jun  7 23:00:40 EDT 2011
+        Updated Makefile.PL to include pre-reqs 

@@ -12,7 +12,9 @@ WriteMakefile(
       : ()),
     PL_FILES            => {},
     PREREQ_PM => {
-        'Test::More' => 0,
+        'Test::More'    => 0,
+        'Any::Renderer' => 1.014,
+        'Data::Printer' => 0.18,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Any-Renderer-Data-Printer-*' },

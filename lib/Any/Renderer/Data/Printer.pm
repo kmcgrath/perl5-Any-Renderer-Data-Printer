@@ -32,7 +32,7 @@ __END__
 
 =head1 NAME
 
-Any::Renderer::Data::Printer - The great new Any::Renderer::Data::Printer!
+Any::Renderer::Data::Printer - Render data structures through Data::Printer
 
 =head1 VERSION
 
@@ -40,25 +40,29 @@ Version 0.01
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+Allow Any::Renderer to use Data::Printer
 
-Perhaps a little code snippet.
+    use Any::Renderer;
+    
+    my $hash_ref = {
+        foo => 'bar',
+        bar => ['foo1','foo2','foo3']   
+    };
 
-    use Any::Renderer::Data::Printer;
+    my $r =  new Any::Renderer( 'Data::Printer' );
+    my $r2 = new Any::Renderer( 'Data::Printer', {indent=>8} ); 
 
-    my $foo = Any::Renderer::Data::Printer->new();
-    ...
+    print $r->render ( $hash_ref );
+    print $r->render ( $hash_ref );
 
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 new
+See L<Any::Renderer>
 
-=head2 
+=head2 OPTIONS
+
+See L<Data::Printer>
 
 =head1 AUTHOR
 
@@ -72,15 +76,11 @@ automatically be notified of progress on your bug as I make changes.
 
 
 
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
     perldoc Any::Renderer::Data::Printer
-
-
-You can also look for information at:
 
 =over 4
 
@@ -103,7 +103,10 @@ L<http://search.cpan.org/dist/Any-Renderer-Data-Printer/>
 =back
 
 
-=head1 ACKNOWLEDGEMENTS
+=head2 Repository
+
+    https://github.com/kmcgrath/Any-Renderer-Data-Printer
+
 
 
 =head1 LICENSE AND COPYRIGHT

@@ -16,6 +16,12 @@ WriteMakefile(
         'Any::Renderer' => 1.014,
         'Data::Printer' => 0.18,
     },
+    META_MERGE => { 
+        resources => {
+            repository => 'https://github.com/kmcgrath/Any-Renderer-Data-Printer',
+        },
+    },
+
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Any-Renderer-Data-Printer-*' },
 );

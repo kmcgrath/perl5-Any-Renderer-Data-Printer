@@ -3,7 +3,7 @@ use strict;
 
 use Data::Printer alias => '_dp_printer';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 sub new {

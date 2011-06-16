@@ -3,7 +3,7 @@ use strict;
 
 use Data::Printer alias => '_dp_printer';
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 sub new {
@@ -23,6 +23,8 @@ sub available_formats {
     return [ 'Data::Printer' ];
 }
 
+
+sub requires_template {0};
 
 1; # End of Any::Renderer::Data::Printer
 

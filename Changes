@@ -11,3 +11,5 @@ Revision history for Any-Renderer-Data-Printer
         POD coverage tests failed on fresh install 
             and are not needed
         Updated MANIFEST 
+
+0.04    Tests in Any::Renderer look for requires_template

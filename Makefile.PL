@@ -18,7 +18,7 @@ WriteMakefile(
     },
     META_MERGE => { 
         resources => {
-            repository => 'https://github.com/kmcgrath/Any-Renderer-Data-Printer',
+            repository => 'https://github.com/kmcgrath/perl5-Any-Renderer-Data-Printer',
         },
     },
 
